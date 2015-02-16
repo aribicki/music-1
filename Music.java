@@ -29,7 +29,14 @@ public class Music {
     media = thisMedia;
     }   
 	
-  public String toString() {
+  Music(String thisAlbum, String thisArtist)
+ {
+    this();
+    album = thisAlbum;
+    artist = thisArtist;
+    }
+ 
+ public String toString() {
     String output = "";
     output = "Album: " + album + " Artist: " + artist + " Genre: " + genre + " Media: " + media + " Location: " + location + " Copies: " + copies;
     return output;
